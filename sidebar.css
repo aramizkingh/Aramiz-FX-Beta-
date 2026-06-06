@@ -1,0 +1,146 @@
+*{
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background: linear-gradient(#07111f,#0b1220);
+    color:white;
+    display:flex;
+    gap:30px;
+    font-family:(Poppins)sans-serif;
+    overflow-x: hidden;
+}
+/*sidebar-section*/
+#sidebar{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: brul(10px);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    background-color: #111827;
+    padding:10px 20px;
+    width:18%;
+}
+#sidebar-heading{
+    display:flex;
+    gap:10px;
+}
+#sidebar-heading h1{
+    color:royalblue;
+    font-weight:bolder;
+    font-size: 35px;
+}
+.sidebar-items{
+    display:grid;
+    gap:20px;
+}
+.sidebar-items a{
+    color:#94a3b8;
+    border-radius:15px;
+    border:none;
+    padding:20px;
+    text-decoration:none;
+}
+.sidebar-items a:hover{
+    background: #2563eb;
+}
+.upgradetopro{
+    background: #1e293b;
+    backdrop-filter: brul(10px);
+    border-radius:15px;
+    padding:5px 10px;
+    border:1px solid rgba(255,255,255,0.05);
+    align-items: center;
+    position:relative;
+    top:20px;
+}
+.upgradetopro p{
+    position:relative;
+    bottom:10px;
+    color:#94a3b8;
+}
+.upgradetopro a{
+    background:#2563eb;
+    color:white;
+    padding:5px 30px;
+    text-decoration: none;
+    border-radius:10px;
+    position:relative;
+    bottom:10px;
+    left:5px;
+}
+.upgradetopro i{
+    color:#2563eb;
+}
+.user-profile{
+    display:flex;
+    gap:5px;
+    position:relative;
+    top:50px;
+}
+.userprofile-info{
+    line-height:0px;
+}
+.user-profile span{
+    background: #2563eb;
+    border-radius: 5px;
+    padding:2px 2px;
+
+}
+.user-profile i{
+    color: white;
+    background:orangered;
+    border:1px solid orangered;
+    border-radius:50%;
+    padding:10px;
+}
+.sidebar-downicons{
+    display:flex;
+    gap:50px;
+    position:relative;
+    top:80px;
+    left:10px;
+}
+/*dashboard-section*/
+#dashboard-section{
+    display:grid;
+    gap:20px;
+}
+.dashboard-navbar{
+    display:flex;
+    justify-content: space-between;
+    position:static;
+    gap:200px;
+    padding:5px 10px;
+}
+#welcome{
+    position:relative;
+    display:grid;
+    line-height: 0px;
+}
+#welcome p{
+    color:#94a3b8;
+}
+#input-search input{
+    position:relative;
+    right:90px;
+    justify-content: center;
+    width:100%;
+    padding:10px 20px;
+    border-radius:15px;
+    background: rgba(255,255,255,0.05);
+    color:white;
+    border:solid 1px rgba(255,255,255,0.05);
+}
+#dashboard-navbaricons{
+    display: flex;
+    gap:10px;
+}
+#mode{
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background: rgba(255,255,255,0.05);
+}

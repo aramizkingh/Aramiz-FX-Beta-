@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contect="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="forex.css">
+    </head>
+    <body>
+        <!--sidebar-section-->
+        <section id="sidebar">
+            <div id="sidebar-heading">
+                <h1><i class="fas fa-m"></i></h1>
+                <h3>MiniForex</h3>
+            </div>
+            <div class="sidebar-items">
+                <a href="forex.html"  id="forexbar"><i class="fas fa-dashboard"></i><span> Dashboard</span></a>
+                <a href="marketwatch.html"><i class="fas fa-bar-chart"></i><span>  Market Watch</span></a>
+                <a href="trade.html"><i class="fas fa-chart-line"></i><span>  Trade</span></a>
+                <a href="orders.html"><i class="fas fa-briefcase"></i><span>  Orders</span></a>
+                <a href="history.html"><i class="fas fa-history"></i><span>  History</span></a>
+                <a href="analytics.html"><i class="fas fa-line-chart"></i><span>  Analytics</span></a>
+                <a href="calendar.html"><i class="fas fa-calendar-alt"></i><span>  Calendar</span></a>
+                <a href="alert.html"><i class="fas fa-bell"></i><span>  Alert</span></a>
+                <a href="news.html"><i class="fas fa-newspaper"></i><span>  News</span></a>
+                <a href="calculator.html"><i class="fas fa-calculator"></i><span>  Risk Calculator</span></a>
+                <a href="journal.html"><i class="fas fa-journal-whills"></i><span>  Trading JournalL</span></a>
+                <a href="setting.html"><i class="fas fa-robot"></i><span>  Setting</span></a>
+            </div>
+            <div class="upgradetopro">
+                <h3><i class="fas fa-diamond"></i><span> </span>Upgrade to Pro</h3>
+                <p>Unlock advanced tools, real-time and more</p>
+                <a href="subscription.html">Upgrade Now</a>
+            </div>
+            <div class="user-profile">
+                <div>
+                    <i class="fas fa-circle-user"></i>
+                </div>
+                <div class="userprofile-info">
+                    <h3>Aramizkingh <span>Pro</span></h3>
+                    <p>aramizkingh@gmail.com</p>
+                </div>
+            </div>
+            <div class="sidebar-downicons">
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
+        </section>
+        <!--Dashboard-section-->
+        <section id="dashboard-section">
+            <div class="dashboard-navbar">
+                <div id="welcome">
+                    <h1>Dashboard</h1>
+                    <p>Welcome back, Aramizkingh👏</p>
+                </div>
+                <div id="input-search">
+                    <input type="text" placeholder="🔍Search for assets. news, etc..." id="search-input">
+                </div>
+                <div id="dashboard-navbaricons">
+                    <button id="notification"><i class="fas fa-bell"></i></button>
+                    <div class="notification-dropdown">
+                        <h4>notification</h4>
+                        <div class="notification-item">
+                            EUR.USD moved +1.2%
+                        </div>
+                        <div class="notification-item">
+                            New Market News Available
+                        </div>
+                        <div class="notiication-item">
+                            Economic Events starts in 30 mins
+                        </div>
+                    </div>
+                    <i class="fas fa-envelope"></i>
+                    <button id="mode"><i class="fas fa-moon"></i></button>
+                    <i class="fas fa-circle-user"></i>
+                </div>
+            </div>
+            <div class="dashboard-data">
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-wallet" id="wallet"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">Total balance</p>
+                        <h4>$24,580.75</h4>
+                        <p class="data-int">+12.45% <span id="lastmonth">from last month</span></p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-dollar-sign" id="dollar"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">Equity</p>
+                        <h4>$24,580.75</h4>
+                        <p class="data-int">+12.45%</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-bank" id="bank"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">Profit/Loss</p>
+                        <h4>+$2,450.75</h4>
+                        <p class="data-int">+12.45%</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-coins" id="coins"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">Free Margin</p>
+                        <h4>$18,500.00</h4>
+                        <p class="data-freemargin">75.21%</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-pie-chart" id="chart"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">Margin Level</p>
+                        <h4>432.19%</h4>
+                        <p class="data-int">Very Good</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-dashboard">
+                <div class="chart-positionasset" >
+                    <div class="chart">
+                        <canvas id="forex-chart"></canvas>
+                    </div>
+                    <div class="positionAssets">
+                        <div class="position">
+                            <div class="position-navbar">
+                                <div class="top-nav">
+                                    <div>
+                                        <h4>OpenPosition</h4>
+                                    </div>
+                                    <div>
+                                        <a href="#">View all</a>
+                                    </div>
+                                </div>
+                                <div class="topnav-links">
+                                    <a href="#">Symbols</a>
+                                    <a href="#">Type</a>
+                                    <a href="#">Lot</a>
+                                    <a href="#">Open Price</a>
+                                    <a href="#">Current Price</a>
+                                    <a href="#">Profit</a>
+                                </div>
+                            </div>
+                            <div class="middle-position">
+                                <div class="symbols">
+                                    <p>EUR/USD</p>
+                                    <p>XAU/USD</p>
+                                    <p>GBP/USD</p>
+                                </div>
+                                <div class="types">
+                                    <p class="buy">Buy</p>
+                                    <p class="sell">Sell</p>
+                                    <p class="buy">Buy</p>
+                                </div>
+                                <div class="lots">
+                                    <p>0.50</p>
+                                    <p>0.20</p>
+                                    <p>0.30</p>
+                                </div>
+                                <div class="open-price">
+                                    <p>1.07650</p>
+                                    <p>2,350.00</p>
+                                    <p>1.26000</p>
+                                </div>
+                                <div class="current-price">
+                                    <p>1.08245</p>
+                                    <p>2,345.67</p>
+                                    <p>1.26574</p>
+                                </div>
+                                <div id="profit">
+                                    <p>+ $297.50</p>
+                                    <p>+ $86.60</p>
+                                    <p>+ $172.20</p>
+                                </div>
+                            </div>
+                            <div class="position-footer">
+                                <p>Total Profit</p>
+                                <p>+$556.30</p>
+                            </div>
+                        </div>
+                        <div class="Assets">
+                            <div class="asset-nav">
+                                <h4>Asset Allocation</h4>
+                                <a href="#">View all</a>
+                            </div>
+                            <div class="asset-content">
+                                <div class="doughnut-chart">
+                                    <canvas id="doughnut"></canvas>
+                                </div>
+                                <div class="list-market">
+                                    <p><i class="fas fa-circle" id="forex"></i>Forex</p>
+                                    <p><i class="fas fa-circle" id="gold"></i>Gold</p>
+                                    <p><i class="fas fa-circle" id="crypto"></i>Crypto</p>
+                                    <p><i class="fas fa-circle" id="indices"></i>Indices</p>
+                                    <p><i class="fas fa-circle" id="others"></i>Others</p>
+                                </div>
+                                <div class="list-marketvalue">
+                                    <p>52.6%</p>
+                                    <p>20.3%</p>
+                                    <p>15.7%</p>
+                                    <p>7.8%</p>
+                                    <p>3.6%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="MarketwatchRecenttradesTopmovers">
+                    <div id="Marketwatch">
+                        <div class="Marketwatch-navbar">
+                            <div class="Marketwatch-nav">
+                                <p>Market Watch</p>
+                                <a href="#">View All</a>
+                            </div>
+                            <div class="Marketwatch-links">
+                                <a href="#">Symbol</a>
+                                <a href="#">Price</a>
+                                <a href="#">Change</a>
+                            </div>
+                        </div>
+                        <div class="Marketwatch-content">
+                            <div class="Marketwatch-symbol">
+                                <p>EUR/USD</p>
+                                <p>GBP/USD</p>
+                                <p>USD/JPY</p>
+                                <p>XAU/USD</p>
+                                <p>BTC/USD</p>
+                                <p>AUD/USD</p>
+                            </div>
+                            <div class="Marketwatch-price">
+                                <p>1.08245</p>
+                                <p>1.26574</p>
+                                <p>156.743</p>
+                                <p>2,345.67</p>
+                                <p>67,892.45</p>
+                                <p>0.65421</p>
+                            </div>
+                            <div class="Marketwatch-change">
+                                <p>+0.13%</p>
+                                <p class="loss">-0.23%</p>
+                                <p>+0.45%</p>
+                                <p>+0.61%</p>
+                                <p>+1.32%</p>
+                                <p class="loss">-0.51%</p>                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Recenttrades">
+                        <div class="Recenttrades-navbar">
+                            <div class="Recenttrades-nav">
+                                <p>Recent Trades</p>
+                                <a href="#">View All</a>
+                            </div>
+                            <div class="Recenttrades-links">
+                                <a href="#">Symbol</a>
+                                <a href="#">Type</a>
+                                <a href="#">Lot</a>
+                                <a href="#">Profit</a>
+                            </div>
+                        </div>
+                        <div class="Recenttrades-content">
+                            <div class="Recenttrades-symbol">
+                                <p>EUR/USD</p>
+                                <p>XAU/USD</p>
+                                <p>GBP/USD</p>
+                                <p>USD/JPY</p>
+                                <p>BTC/USD</p>
+                            </div>
+                            <div class="Recenttrades-types">
+                                <p>Buy</p>
+                                <p>Sell</p>
+                                <p>Buy</p>
+                                <p>Buy</p>
+                                <p>Sell</p>
+                            </div>
+                            <div class="Recenttrades-Lot">
+                                <p>0.50</p>
+                                <p>0.20</p>
+                                <p>0.30</p>
+                                <p>0.40</p>
+                                <p>0.10</p>
+                            </div>
+                            <div class="Recenttrades-profit">
+                                <p>+$125.50</p>
+                                <p class="gold-loss">-$45.20</p>
+                                <p>+$89.10</p>
+                                <p>+$68.40</p>
+                                <p>+$210.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Topmovers">
+                        <div class="Topmover-navbar">
+                            <p>Top Movers</p>
+                            <a href="#">View All</a>
+                        </div>
+                        <div class="Topmover-content">
+                            <div class="Topmovers-symbol">
+                                <p>XAU/USD</p>
+                                <p>BTC/USD</p>
+                                <p>USD/JPY</p>
+                                <p>EUR/USD</p>
+                                <p>AUD/USD</p>
+                            </div>
+                            <div>
+                                <p>2,345.67</p>
+                                <p>67,892.45</p>
+                                <p>156.743</p>
+                                <p>1.08245</p>
+                                <p>0.65421</p>
+                            </div>
+                            <div class="movers">
+                                <p>+0.61%</p>
+                                <p>+1.32%</p>
+                                <p>+0.45%</p>
+                                <p>+0.13%</p>
+                                <p class="movers-loss">-0.15%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-footer">
+                <div class="News">
+                    <div class="News-navbar">
+                        <p>News</p>
+                        <a href="">View all</a>
+                    </div>
+                  <div class="Newsupdates-time">
+                    <div class="News-updates">
+                        <div class="Market-news">
+                            <div class="Marketnews-image">
+                                <img src="#">
+                            </div>
+                            <div class="Marketnews-info">
+                                <p>Global markets rally as Fed signals possible rate cuts</p>
+                                <button>Market News</button>
+                            </div>
+                        </div>
+                        <div class="Commodities">
+                            <div class="Commodities-image">
+                                <img src="#">
+                            </div>
+                            <div class="Commodities-info">
+                                <p>Gold prices surge to new record high</p>
+                                <button>Commodities</button>
+                            </div>
+                        </div>
+                        <div class="Crypto">
+                            <div class="Crypto-image">
+                                <img src="#">
+                            </div>
+                            <div class="Crypto-info">
+                                <p>Bitcoin breaks above $67,000 as ETF inflows continue</p>
+                                <button>Crypto</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p>2hrs ago</p>
+                        <p>5hrs ago</p>
+                        <p>8hrs ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="Economic-calendar">
+                    <div class="Economiccalendar-navbar">
+                        <p>Economic Calendar</p>
+                        <a href="#">View all</a>
+                    </div>
+                    <div class="Economiccalendar-content">
+                        <div>
+                            <p>15:30</p>
+                            <p>17:00</p>
+                            <p>21:00</p>
+                        </div>
+                        <div>
+                            <p>USD</p>
+                            <p>USD</p>
+                            <p>USD</p>
+                        </div>
+                        <div>
+                            <p>Retail Sales(MoM)</p>
+                            <p>Fed Chair Powell Speaks</p>
+                            <p>FOMC Meeting Minutes</p>
+                        </div>
+                        <div>
+                            <p><span>Actual</span>0.4%</p>
+                            <p>-</p>
+                            <p>-</p>
+                        </div>
+                        <div>
+                            <p><span>Forecast</span>0.2%</p>
+                            <p>-</p>
+                            <p>-</p>
+                        </div>
+                        <div>
+                            <p><span>Previous</span>0.1%</p>
+                            <p>-</p>
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="forex.js"></script>
+    </body>
+</html>
