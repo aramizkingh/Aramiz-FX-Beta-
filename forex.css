@@ -11,7 +11,6 @@ body{
     display:flex;
     gap:30px;
     font-family:(Poppins)sans-serif;
-    overflow-x: hidden;
 }
 /*sidebar-section*/
 #sidebar{
@@ -21,6 +20,11 @@ body{
     background-color: #111827;
     padding:10px 20px;
     width:18%;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    overflow-y: auto;
 }
 #sidebar-heading{
     display:flex;
@@ -31,6 +35,10 @@ body{
     font-weight:bolder;
     font-size: 35px;
 }
+#sidebar-heading h3{
+    position:relative;
+    top:14px;
+}
 .sidebar-items{
     display:grid;
     gap:10px;
@@ -40,9 +48,7 @@ body{
     border-radius:15px;
     border:none;
     padding:20px;
-    text-decoration:none;
-}
-.sidebar-items a{
+    text-decoration:none; 
     background:#1e293b;
     padding:20px;
     border-radius:15px;
@@ -51,7 +57,7 @@ body{
 .sidebar-items a:hover{
     background: #2563eb;
 }
-#forexbar,#alertbar,#analyticsbar,#calculatorbar,#calendarbar,#historybar,#journalbar,#marketbar,#newsbar,#ordersbar,#settingbar,#tradebar{
+#forexbar,#alertbar,#analyticsbar,#calculatorbar,#calendarbar,#historybar,#journalbar,#marketbar,#newsbar,#ordersbar,#tradebar{
     background:purple;
     border-radius: 15px;
     border:none;
@@ -115,9 +121,20 @@ body{
     left:10px;
 }
 /*dashboard-section*/
+img{
+    position:absolute;
+    width:41px;
+    height:41px;
+    border-radius: 50%;
+    top:490px;
+    left:7px;
+    z-index: 1000;
+}
 #dashboard-section{
     display:grid;
     gap:20px;
+    position:relative;
+    left:250px;
 }
 .dashboard-navbar{
     display:flex;
@@ -167,6 +184,7 @@ body{
     width: 300px;
     z-index: 1000;
     backdrop-filter: brul(10px);
+    font-size: 14px;
 }
 #notification{
     border:1px solid rgba(255,255,255,0.05);
@@ -276,6 +294,9 @@ body{
     border-radius:15px;
     position:relative;
     top:30px;
+    width:90%;
+    height:300px;
+    color:#0f172a;
 }
 .positionAssets{
     display:flex;
@@ -314,6 +335,26 @@ body{
     color:#94a3b8;
     display: flex;
     justify-content: space-between;
+}
+#symbol{
+    position:relative;
+    right:5px;
+}
+#type{
+    position:relative;
+    right:5px;
+}
+#lot{
+    position:relative;
+    right:14px;
+}
+#open{
+    position:relative;
+    right:14px;
+}
+#current{
+    position:relative;
+    right:12px;
 }
 .middle-position{
     display:flex;
@@ -376,19 +417,19 @@ body{
     gap:10px;
 }
 #forex{
-    color:#3b82f6;
+    color:#53d8ff;
 }
 #gold{
-    color:#eab308;
+    color:#ff8fa3;
 }
 #crypto{
-    color:#22c55e;
+    color:#ffc857;
 }
 #indices{
-    color:yellow;
+    color:#ffe45e;
 }
 #others{
-    color:#a855f7;
+    color:#6ee7b7;
 }
 .asset-content{
     display:flex;
@@ -396,7 +437,8 @@ body{
 }
 .MarketwatchRecenttradesTopmovers{
     display:grid;
-    gap:10px;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
 }
 #Marketwatch{
     background:rgba(255,255,255,0.05);
@@ -508,17 +550,19 @@ body{
     justify-content: space-between;
 }
 .dashboard-footer{
-    display:flex;
+    display:grid;
 }
 .News{
     background: rgba(255,255,255,0.05);
     backdrop-filter:brul(10px);
     border:1px solid rgba(255,255,255,0.05);
     border-radius:15px;
-    width:330px;
     position:relative;
+    width:380px;
+    right:170px;
     padding:5px 10px;
     font-size: 14px;
+    grid-area: item1;
 }
 .News-navbar{
     display:flex;
@@ -530,14 +574,6 @@ body{
     position:relative;
     top:10px;
 }
-.Newsupdates-time{
-    display:flex;
-    gap:10px;
-}
-.Market-news,.Commodities,.Crypto{
-    display:flex;
-    gap:10px;
-}
 .Economic-calendar{
     background:rgba(255,255,255,0.05);
     backdrop-filter: brul(10px);
@@ -545,9 +581,10 @@ body{
     border-radius:15px;
     width:600px;
     position:relative;
-    left:10px;
+    left:225px;
     font-size: 14px;
     padding:5px 10px;
+    grid-area:item2;
 }
 .Economiccalendar-navbar{
     display:flex;

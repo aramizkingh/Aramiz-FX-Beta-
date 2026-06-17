@@ -13,8 +13,8 @@
         <!--sidebar-section-->
         <section id="sidebar">
             <div id="sidebar-heading">
-                <h1><i class="fas fa-m"></i></h1>
-                <h3>MiniForex</h3>
+                <h1>KX</h1>
+                <h3>KYNEX</h3>
             </div>
             <div class="sidebar-items">
                 <a href="forex.html"  id="forexbar"><i class="fas fa-dashboard"></i><span> Dashboard</span></a>
@@ -45,13 +45,14 @@
                 </div>
             </div>
             <div class="sidebar-downicons">
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-gear"></i>
+                <i class="fas fa-headset"></i>
+                <i class="fas fa-user"></i>
             </div>
         </section>
         <!--Dashboard-section-->
         <section id="dashboard-section">
+            <img src="logo.jpeg">
             <div class="dashboard-navbar">
                 <div id="welcome">
                     <h1>Dashboard</h1>
@@ -134,7 +135,7 @@
             <div class="inner-dashboard">
                 <div class="chart-positionasset" >
                     <div class="chart">
-                        <canvas id="forex-chart"></canvas>
+                        <div id="forex-chart"></div>
                     </div>
                     <div class="positionAssets">
                         <div class="position">
@@ -148,12 +149,12 @@
                                     </div>
                                 </div>
                                 <div class="topnav-links">
-                                    <a href="#">Symbols</a>
-                                    <a href="#">Type</a>
-                                    <a href="#">Lot</a>
-                                    <a href="#">Open Price</a>
-                                    <a href="#">Current Price</a>
-                                    <a href="#">Profit</a>
+                                    <a href="#" id="symbol">Symbols</a>
+                                    <a href="#" id="type">Type</a>
+                                    <a href="#" id="lot">Lot</a>
+                                    <a href="#" id="open">Open</a>
+                                    <a href="#" id="current">Current</a>
+                                    <a href="#" id="profit">Profit</a>
                                 </div>
                             </div>
                             <div class="middle-position">
@@ -235,28 +236,10 @@
                         </div>
                         <div class="Marketwatch-content">
                             <div class="Marketwatch-symbol">
-                                <p>EUR/USD</p>
-                                <p>GBP/USD</p>
-                                <p>USD/JPY</p>
-                                <p>XAU/USD</p>
-                                <p>BTC/USD</p>
-                                <p>AUD/USD</p>
                             </div>
                             <div class="Marketwatch-price">
-                                <p>1.08245</p>
-                                <p>1.26574</p>
-                                <p>156.743</p>
-                                <p>2,345.67</p>
-                                <p>67,892.45</p>
-                                <p>0.65421</p>
                             </div>
                             <div class="Marketwatch-change">
-                                <p>+0.13%</p>
-                                <p class="loss">-0.23%</p>
-                                <p>+0.45%</p>
-                                <p>+0.61%</p>
-                                <p>+1.32%</p>
-                                <p class="loss">-0.51%</p>                  
                             </div>
                         </div>
                     </div>
@@ -341,42 +324,7 @@
                         <p>News</p>
                         <a href="">View all</a>
                     </div>
-                  <div class="Newsupdates-time">
-                    <div class="News-updates">
-                        <div class="Market-news">
-                            <div class="Marketnews-image">
-                                <img src="#">
-                            </div>
-                            <div class="Marketnews-info">
-                                <p>Global markets rally as Fed signals possible rate cuts</p>
-                                <button>Market News</button>
-                            </div>
-                        </div>
-                        <div class="Commodities">
-                            <div class="Commodities-image">
-                                <img src="#">
-                            </div>
-                            <div class="Commodities-info">
-                                <p>Gold prices surge to new record high</p>
-                                <button>Commodities</button>
-                            </div>
-                        </div>
-                        <div class="Crypto">
-                            <div class="Crypto-image">
-                                <img src="#">
-                            </div>
-                            <div class="Crypto-info">
-                                <p>Bitcoin breaks above $67,000 as ETF inflows continue</p>
-                                <button>Crypto</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="time">
-                        <p>2hrs ago</p>
-                        <p>5hrs ago</p>
-                        <p>8hrs ago</p>
-                    </div>
-                  </div>
+                    <div class="news-content"></div>
                 </div>
                 <div class="Economic-calendar">
                     <div class="Economiccalendar-navbar">
@@ -419,6 +367,7 @@
             </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
         <script src="forex.js"></script>
     </body>
 </html>
