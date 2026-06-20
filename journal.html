@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <title>trading journal</title>
-        <link rel="stylesheet" href="forex.css">
+        <title>trading journal</title> 
+        <link rel="stylesheet" href="journal.css">
     </head>
     <body>
         <section id="sidebar"> <div id="sidebar-heading">
-                <h1><i class="fas fa-m"></i></h1>
-                <h3>MiniForex</h3>
+                <h2>AZ</h2>
+                <h4>ARAMIZ FX</h4>
             </div>
             <div class="sidebar-items">
                 <a href="#dashboard-section"><i class="fas fa-dashboard"></i><span> </span>Dashboard</a>
@@ -51,7 +51,7 @@
             <div class="dashboard-navbar">
                 <div id="welcome">
                     <h1>Trading Journal</h1>
-                    <p>Welcome back, Aramizkingh👏</p>
+                    <p>Track, analyze and improve your trading performance</p>
                 </div>
                 <div id="input-search">
                     <input type="text" placeholder="🔍Search for assets. news, etc..." id="search-input">
@@ -63,7 +63,439 @@
                     <i class="fas fa-circle-user"></i>
                 </div>
             </div>
+            <div class="dashboard-data">
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-layer-group" id="trade-icon"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">TOTAL TRADES</p>
+                        <h4>128</h4>
+                        <p>12.5% from last 30 days</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-check-circle" id="win-icon"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">WIN RATE</p>
+                        <h4>68.75%</h4>
+                        <p>8.3% from last 30 days</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-wallet" id="net-icon"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">NET PROFIT</p>
+                        <h4>$4,285.75</h4>
+                        <p>15.7% from last 30 days</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-balance-scale" id="profit-icon"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">PROFIT FACTOR</p>
+                        <h4>2.34</h4>
+                        <p>0.36 from last 30 days</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-scale-unbalanced" id="average-icon"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">AVERAGE RR</p>
+                        <h4>1:2.45</h4>
+                        <p>0.25 from last 30 days</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="data-icon">
+                        <i class="fas fa-trophy" id="expectancy-icon"></i>
+                    </div>
+                    <div class="data-value">
+                        <p class="data-name">EXPECTANCY</p>
+                        <h4>$33.48</h4>
+                        <p>5.8% from last 30 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-dashboard">
+                <div class="filter-dashboard">
+                    <div class="filter-nav">
+                        <p>Filter</p>
+                        <p>Reset</p>
+                    </div>
+                    <div class="daterange">
+                        <p>Date Range</p>
+                        <input type="date" placeholder="Select Date Range">
+                    </div>
+                    <div class="symbol">
+                        <p>Symbols</p>
+                        <select>
+                            <option selected>All Symbols</option>
+                            <option>EUR/USD</option>
+                            <option>GBP/USD</option>
+                            <option>USD/JPY</option>
+                            <option>AUD/USD</option>
+                            <option>NZD/USD</option>
+                            <option>USD/CHF</option>
+                            <option>EUR/JPY</option>
+                            <option>XAU/USD</option>
+                            <option>BTC/USD</option>
+                            <option>ETH/USD</option>
+                            <option>US30</option>
+                            <option>NAS100</option>
+                            <option>SPX500</option>
+                        </select>
+                    </div>
+                    <div class="direction">
+                        <p>Direction</p>
+                        <select>
+                            <option selected>All Directions</option>
+                            <option>Buy</option>
+                            <option>Sell</option>
+                        </select>
+                    </div>
+                    <div class="result">
+                        <p>Result</p>
+                        <select>
+                            <option selected>All Results</option>
+                            <option>Win</option>
+                            <option>Loss</option>
+                            <option>Break Even</option>
+                        </select>
+                    </div>
+                    <div class="setup">
+                        <p>Setup</p>
+                        <select>
+                            <option selected>All Setups</option>
+                            <option>Breakout</option>
+                            <option>Pullback</option>
+                            <option>Support</option>
+                            <option>Resistance</option>
+                            <option>Trendline</option>
+                            <option>Rejection</option>
+                            <option>Range</option>
+                            <option>Scalping</option>
+                            <option>Swing Trade</option>
+                            <option>News Trade</option>
+                            <option>Liquidity Grab</option>
+                        </select>
+                    </div>
+                    <div class="emotion">
+                        <p>Emotion</p>
+                        <select>
+                            <option selected>AllEmotions</option>
+                            <option>Confident😎</option>
+                            <option>Focused🎯</option>
+                            <option>Patient🧘</option>
+                            <option>Neutral😑</option>
+                            <option>Fearful😰</option>
+                            <option>Greedy😈</option>
+                            <option>Frustrated😤</option>
+                            <option>Angry😡</option>
+                        </select>
+                    </div>
+                    <div class="more">
+                        <a href="#">More Filters</a>
+                    </div>
+                    <div class="apply">
+                        <a href="#">Apply Filters</a>
+                    </div>
+                </div>
+                <div class="trades-dashboard">
+                    <div class="trades-navbar">
+                        <div class="left">
+                            <div class="lefttop">
+                                <p>Trades</p>
+                            </div>
+                            <div class="leftbottom">
+                                <a href="#">All trades</a>
+                                <a href="#">Open Trades</a>
+                                <a href="#">Closed Trades</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a href="#"><i class="fas fa-download"></i>Export</a>
+                            <a href="#"><i class="fas fa-download"></i>Import</a>
+                        </div>
+                    </div>
+                    <div class="trades-content">
+                        <div class="nav">
+                            <p>Date</p>
+                            <p>Symbol</p>
+                            <p>Direction</p>
+                            <p>Setup</p>
+                            <p>Entry</p>
+                            <p>Exit</p>
+                            <p>Lot Size</p> 
+                            <p>Result</p>
+                            <p>P/L (USD)</p>
+                            <p>RR</p>
+                            <p>Emotion</p>
+                            <p>Notes</p>
+                        </div>
+                        <div class="row">
+                            <p>31 May 2024</p>
+                            <p>EUR/USD</p>
+                            <p>BUY</p>
+                            <p>Breakout</p>
+                            <p>1.08540</p>
+                            <p>1.09020</p>
+                            <p>0.50</p>
+                            <p>Win</p>
+                            <p>+$240.00</p>
+                            <p>1:2.4</p>
+                            <p>😎</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>31 May 2024</p>
+                            <p>GBP/USD</p>
+                            <p>SELL</p>
+                            <p>Pullback</p>
+                            <p>1.27210</p>
+                            <p>1.26850</p>
+                            <p>0.30</p>
+                            <p>Win</p>
+                            <p>+$108.00</p>
+                            <P>1:1.8</P>
+                            <p>😑</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>30 May 2024</p>
+                            <p>XAU/USD</p>
+                            <p>BUY</p>
+                            <p>Support</p>
+                            <p>2335/40</p>
+                            <p>2348.60</p>
+                            <p>0.20</p>
+                            <p>Win</p>
+                            <p>+$264.00</p>
+                            <P>1:2.6</P>
+                            <p>😎</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>30 May 2024</p>
+                            <p>USD/JPY</p>
+                            <p>SELL</p>
+                            <p>Rejection</p>
+                            <p>156.280</p>
+                            <p>156.620</p>
+                            <p>0.40</p>
+                            <p>Loss</p>
+                            <p>-$136.00</p>
+                            <P>1:1.0</P>
+                            <p>😑</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>29 May 2024</p>
+                            <p>AUD/USD</p>
+                            <p>BUY</p>
+                            <p>Trendline</p>
+                            <p>0.66320</p>
+                            <p>0.66810</p>
+                            <p>0.50</p>
+                            <p>Win</p>
+                            <p>+$245.00</p>
+                            <P>1:2.5</P>
+                            <p>😑</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>29 May 2024</p>
+                            <p>EUR/JPY</p>
+                            <p>BUY</p>
+                            <p>Breakout</p>
+                            <p>168.450</p>
+                            <p>168.010</p>
+                            <p>0.30</p>
+                            <p>Loss</p>
+                            <p>-$132.00</p>
+                            <P>1:0.8</P>
+                            <p>😡</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>28 May 2024</p>
+                            <p>GBP/JPY</p>
+                            <p>SELL</p>
+                            <p>Pullback</p>
+                            <p>199.210</p>
+                            <p>198.320</p>
+                            <p>0.40</p>
+                            <p>Win</p>
+                            <p>+$356.00</p>
+                            <P>1:2.2</P>
+                            <p>😎</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>28 May 2024</p>
+                            <p>BTC/USD</p>
+                            <p>BUY</p>
+                            <p>Support</p>
+                            <p>67250.0</p>
+                            <p>68980.0</p>
+                            <p>0.10</p>
+                            <p>Win</p>
+                            <p>+$173.00</p>
+                            <P>1:1.7</P>
+                            <p>😑</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>27 May 2024</p>
+                            <p>US30</p>
+                            <p>SELL</p>
+                            <p>Rejection</p>
+                            <p>38620.0</p>
+                            <p>38900.0</p>
+                            <p>0.20</p>
+                            <p>Loss</p>
+                            <p>-$56.00</p>
+                            <P>1:0.7</P>
+                            <p>😑</p>
+                            <p>notes</p>
+                        </div>
+                        <div class="row">
+                            <p>27 May 2024</p>
+                            <p>EUR/GBP</p>
+                            <p>Buy</p>
+                            <p>Range</p>
+                            <p>0.85740</p>
+                            <p>0.86230</p>
+                            <p>0.30</p>
+                            <p>Win</p>
+                            <p>+$147.00</p>
+                            <P>1:1.6</P>
+                            <p>😑</p>
+                            <p>notes</p>
+                        </div>
+                    </div>
+                    <div class="trades-footer">
+                        <p>Showing 1 to 10 of 128 results</p>
+                        <select id="trades-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>...</option>
+                            <option>13</option>
+                        </select>
+                        <select>
+                            <option>10/page</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="notesandemotion">
+                <div class="trades-notes">
+                    <p>Trades Notes</p>
+                    <p>Strong bullish breakout on EUR/USD.Price reacted perfectly from daily support level.Volume was strongly and market structure was favorable</p>
+                    <textarea type="text" placeholder="journalise your trade"></textarea>
+                    <div>
+                        <a href="#">Tags</a>
+                        <a href="#">Breakout</a>
+                        <a href="#">Daily Support</a>
+                        <a href="#">High Volume</a>
+                    </div>
+                </div>
+                <div class="emotion-tracker">
+                    <div class="emotion-graph">
 
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="doughnurt">
+                    <div class="doughnurt-nav">
+                        <p>Performance Overview</p> 
+                        <select>
+                            <option selected>Current Month</option>
+                            <option>This Month</option>
+                            <option>Last Month</option>
+                            <option>This Year</option>
+                            <option>All Time</option>
+                        </select>
+                    </div>
+                    <div class="performance-chart">
+                        <div class="doughnurtchart">
+                            <canvas id="doughnurt-chart"></canvas>
+                        </div>
+                        <div class="winandloss">
+                            <div class="win">
+                                <p><i class="fas fa-circle"></i> Win</p>
+                                <p>68.75%</p>
+                            </div>
+                            <div class="loss">
+                                <p><i class="fas fa-circle"></i> Loss</p>
+                                <p>31.25%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doughnurt-footer">
+                        <p>Total Pnl</p>
+                        <p>$4,285.75</p>
+                    </div>
+                </div>
+                <div class="bar">
+                    <p>P/L By Day</p>
+                    <canvas id="bar-chart"></canvas>
+                </div>
+            </div>
+            <div class="setupandcalendar">
+                <div class="bestsetups">
+                    <div>
+                    <p>Best Setups</p>
+                    </div>
+                    <div class="breakout">
+                        <p>Breakout</p>
+                        <p>23 Trades</p>
+                        <p> 78%</p>
+                    </div>
+                    <div class="pullback">
+                        <p>Pullback</p>
+                        <p>17 Trades</p>
+                        <p>68%</p>
+                    </div>
+                    <div class="reversal">
+                        <p>Reversal</p>
+                        <p>19 Trades</p>
+                        <p>61%</p>
+                    </div>
+                    <div class="trendline">
+                        <p>Trendline</p>
+                        <p>12 Trades</p>
+                        <p>75%</p>
+                    </div>
+                </div>
+                <div class="journalcalendar">
+                    <div class="calendar-nav">
+                        <p>Journal Calendar</p>
+                        <p>June 2026</p>
+                    </div>
+                    <div class="calendar-content">
+                        <p>Mon</p>
+                        <p>Tue</p>
+                        <p>Wed</p>
+                        <p>Thu</p>
+                        <p>Fri</p>
+                        <p>Sat</p>
+                        <p>Sun</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
 </html>

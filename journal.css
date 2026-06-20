@@ -21,12 +21,15 @@ body{
     background-color: #111827;
     padding:10px 20px;
     width:18%;
+    top:0;
+    left:0;
+    overflow-y: auto;
 }
 #sidebar-heading{
     display:flex;
     gap:10px;
 }
-#sidebar-heading h1{
+#sidebar-heading h2{
     color:royalblue;
     font-weight:bolder;
     font-size: 35px;
@@ -67,7 +70,7 @@ body{
 .upgradetopro a{
     background:#2563eb;
     color:white;
-    padding:5px 30px;
+    padding:5px 25px;
     text-decoration: none;
     border-radius:10px;
     position:relative;
@@ -148,188 +151,210 @@ body{
     width:20px;
     background: rgba(255,255,255,0.05);
 }
-/*inner-dashboard*/
-.inner-dashboard{
-    display:flex;
-}
-/*innerleft-dashboard*/
-.innerleft-dashboard{
+/*dashboard-data*/
+.dashboard-data{
     display:grid;
-    gap:20px;
+    grid-template-columns: repeat(6,1fr);
+    gap:5px;
 }
-.plansandbilling{
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+.data{
     display:flex;
-    gap:32px;
+    background:rgba(255,255,255,0.05);
+    border-radius: 5px;
+    border:1 px solid rgba(255,255,255,0.05);
+    backdrop-filter: brul(10px);
+    font-size:14px;
+    height:100px;
 }
-.plansandbilling a{
-    color:white;
-    text-decoration: none;
+.data-value{
+    line-height: 0.7;
 }
-.plansandbilling a:hover{
-    border-bottom:2px solid royalblue;
-
-}
-.billing a{
+.data-icon i{
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius:10px;
+    padding:20px;
     position:relative;
-    left:250px;
-    top:10px;
-    text-decoration:none;
-    color:white;
-    background:#111827 ;
-    border:1px solid rgba(255,255,255,0.05);
-    border-radius:15px
+    top:23px;
 }
-.pricing-plans{
-    display:flex;
-    gap:20px;
+#trade-icon{
+    color:#4f46e3;
+    background: linear-gradient(135deg,rgba(255,255,255,0.05),#4f46e3);
 }
-.free-plan{
-    background: #111827;
-    border:1px solid rgba(255,255,255,0.05);
-    border-radius:15px;
-    grid-area: free-plan;
-    padding:10px 20px;
+#win-icon{
+    color:#10b981;
+    background:linear-gradient(135deg,rgba(255,255,255,0.05),#10b981);
 }
-.free-button a{
-    border:1px solid rgba(255,255,255,0.05);
-    background: #111827;
-    border-radius:10px;
-    padding:10px 50px;
-    text-decoration:none;
-    width:100%;
-    color:white;
+#net-icon{
+    color:#22c55e;
+    background:linear-gradient(135deg,rgba(255,255,255,0.05),#22c55e);
 }
-.pro-plan{
-    background:#111827;
-    border:1px solid #2563eb;
-    border-radius:15px;
-    grid-area: proplan;
-    padding:10px 20px;
+#profit-icon{
+    color:#f59e0b;
+    background:linear-gradient(135deg,rgba(255,255,255,0.05),#f59e0b);
 }
-.pro-button a{
-    background:#2563eb;
-    border:1px solid #2563eb;
-    border-radius:10px;
-    padding:10px 30px;
-    text-decoration:none;
-    color:white;
+#average-icon{
+    color:#8b5cf6;
+    background:linear-gradient(135deg,rgba(255,255,255,0.05),#8b5cf6);
 }
-.mostpopular{
-    background:#2563eb;
-    padding:10px;
-    width:100%;
-    border-radius:15px;
+#expectancy-icon{
+    color:#eab308;
+    background:linear-gradient(135deg,rgba(255,255,255,0.05),#eab308);
 }
-.premium-plan{
-    background:#111827;
-    border:1px solid rgba(255,255,255,0.05);
-    border-radius:15px;
-    grid-area:premiumplan;
-    padding:10px 20px;
-}
-.premium-button a{
-    border:1px solid rgba(255,255,255,0.05);
-    background:#111827;
-    padding:10px 23px;
-    border-radius:10px;
-    text-decoration: none;
-    color:white;
-}
-/*all plans include*/
-.allplansinclude{
-    background:#111827;
-    border:1px solid rgba(255,255,255,0.05);
-    border-radius:15px;
-    padding:10px 20px;
-    font-size: 14px;
-}
-.include{
-    display:flex;
-    justify-content:space-around;
-}
-.secure,.data,.device,.support{
+/*middle-dashboard*/
+.middle-dashboard{
     display:flex;
     gap:10px;
 }
-.secure-icon i,.data-icon i,.device-icon i,.support-icon i{
-    padding:15px;
-    border-radius:50%;
-    border:1px solid rgba(255,255,255,0.05);
-}
-/*right-dashboard*/
-.right-dashboard{
-    display:grid;
-    gap:20px;
-}
-.current-plan{
-    background:#111827;
-    border:1px solid rgba(255,255,255,0.05);
+/*filter-dashboard*/
+.filter-dashboard{
+    background: #111827;
     border-radius:15px;
+    border:1px solid rgba(255,255,255,0.05);
     padding:10px 20px;
-    width:135%;
-    position:relative;
-    left:10px;
-    font-size: 14px;
+    width:23%;
 }
-.current-navbar{
+.filter-nav{
+    display:flex;
+    justify-content: space-between;
+}
+.more a{
+    padding:10px 20px;
+    text-decoration:none;
+    color:white;
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.05);
+}
+.apply a{
+    padding:10px 20px;
+    text-decoration:none;
+    color:white;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.05);
+}
+/*trades-dashboard*/
+.trades-dashboard{
+    background:#111827;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,0.05);
+    padding:10px 20px;
+    width:100%;
+}
+.trades-navbar{
+    display:flex;
+    justify-content: space-between;
+}
+.leftbottom a{
+    text-decoration: none;
+    color:white;
+}
+.right{
+    display:flex;
+    gap:10px;
+}
+.right a{
+    text-decoration: none;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.05);
+}
+.nav{
     display:flex;
     justify-content:space-between;
 }
-.current-navbar a{
-    text-decoration: none;
-    position:relative;
-    top:14px;
-}
-.current-middle{
-    display:flex;
-    gap:20px;
-}
-.current-middle i{
-    border:1px solid #2563eb;
-    border:50%;
-    padding:23px;
-    border-radius:50%;
-    background: blue;
-    color:#2563eb;
-}
-.current-button{
-    border:1px solid rgba(255,255,255,0.05);
-    border-radius:15px;
-    padding:10px 23px;
-}
-.current-button a{
-    color:white;
-    text-decoration:none;
-}
-.billing-summary{
-    background:#111827;
-    border:1px solid rgba(255,255,255,0.05);
-    border-radius:15px;
-    padding:10px 20px;
-    width:135%;
-    position:relative;
-    left:10px;
-    font-size:14px;
-}
-.planning,.amount,.billing-cycle,.next-billing,.payment-method{
+.row{
     display:flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-.add-method a{
-    color:royalblue;
-    text-decoration:none;
-    position:relative;
-    left:50px;
+#trades-select option{
+    display:flex;
 }
-.why-upgrade{
+.trades-footer{
+    display:flex;
+    justify-content: space-between;
+}
+.trades-content{
+    background: #1e293b;
+    border-radius: 15px;
+    padding:5px;
+}
+/*notes and emotion*/
+.notesandemotion{
+    display:flex;
+    gap:10px;
+}
+.trades-notes{
+    background:#111827;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,0.05);
+    padding:10px 20px;
+    width:100%;
+}
+.trades-notes a{
+    text-decoration:none;
+    color:white;
+}
+.emotion-tracker{
+    background:#111827;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,0.05);
+    padding:10px 20px;
+    width:100%;
+}
+/*charts*/
+.charts{
+    display:flex;
+    gap:10px;
+}
+/*performance overview*/
+.doughnurt{
     background:#111827;
     border:1px solid rgba(255,255,255,0.05);
     border-radius:15px;
     padding:10px 20px;
-    position:relative;
-    left:10px;
-    font-size: 14px;
-    width:135%;
+    width:100%;
+}
+.doughnurt-nav{
+    display:flex;
+    justify-content: space-between;
+}
+.performance-chart{
+    display:flex;
+}
+/*P/L By Day*/
+.bar{
+    background:#111827;
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius:15px;
+    padding:10px 20px;
+    width:100%;
+}
+/*setupandcalendar*/
+.setupandcalendar{
+    display:flex;
+    gap:10px;
+}
+.bestsetups{
+    background:#111827;
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius:15px;
+    padding:10px 20px;
+    width:100%;
+}
+.breakout, .pullback,.trendline, .reversal{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.journalcalendar{
+    background:#111827;
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius:15px;
+    padding:10px 20px;
+    width:100%;
+}
+.calendar-content{
+    display:flex;
+    justify-content: space-between;
 }
