@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
         <title>news page</title>
-        <link rel="stylesheet" href=forex.css>
+        <link rel="stylesheet" href=news.css>
     </head>
     <body>
         <section id="sidebar">
@@ -49,13 +49,10 @@
             </div>
         </section>
         <section id="dashboard-section">
-             <div class="dashboard-navbar">
+            <div class="top-navbar">
                 <div id="welcome">
                     <h1>News</h1>
-                    <p>Welcome back, Aramizkingh👏</p>
-                </div>
-                <div id="input-search">
-                    <input type="text" placeholder="🔍Search for assets. news, etc..." id="search-input">
+                    <p>Stay updated with yhe market and economic events that move the markets</p>
                 </div>
                 <div id="dashboard-navbaricons">
                     <i class="fas fa-bell"></i>
@@ -64,6 +61,124 @@
                     <i class="fas fa-circle-user"></i>
                 </div>
             </div>
+            <div class="bottom-navbar">
+                <div class="inputs-navbar">
+                    <div class="search-input">
+                        <input placeholder="🔎Search news...">
+                    </div>
+                    <div class="category-input">
+                        <select>
+                            <option>All Categories</option>
+                            <option>Forex</option>
+                            <option>Crypto</option>
+                            <option>Stocks</option>
+                            <option>Commodities</option>
+                            <option>Indices</option>
+                            <option>Economy</option>
+                            <option>Central Banks</option>
+                            <option>Interest Rates</option>
+                            <option>Inflation</option>
+                            <option>Employment</option>
+                            <option>Earning</option>
+                            <option>Market Analysis</option>
+                        </select>
+                    </div>
+                    <div class="calendar-input">
+                        <select>
+                            <option><i class="fas fa-calendar"></i> jun 30-jul7,2026</option>
+                            <option>Today</option>
+                            <option>This Week</option>
+                            <option>This Month</option>
+                            <option>Last 30 Days</option>
+                            <option>Custom Range</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="gridlist">
+                    <div class="grid">
+                        <a href="#"><i class="fas fa-table-cells"></i>Grid</a>
+                    </div>
+                    <div class="list">
+                        <a href="#"><i class="fas fa-list"></i>List</a>
+                    </div>
+                </div>
+            </div>
+            <!--inner dashboard-->
+            <div class="left-dashboard">
+                <div class="featured-news">
+                    <div class="featured-image">
+                        <img src="photo/featured.jpeg">
+                    </div> 
+                    <div class="featured-content">
+                        <p>Forex</p>
+                        <h1>US Dollar Strengthens on Strong Economic Data</h1>
+                        <p>The Us dollar index rises to a 2-month high as better than expected economic data fueled expectations of higher interest rates</p>
+                        <div class="featured-footer">
+                            <div class="date">
+                                <p><i class="fas fa-calendar"></i>Jul 1,2026• 10:30 AM</p>
+                                <p>🌐 Reuters</p>
+                            </div>
+                            <div class="featured-button">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse">
+                    <h3>Browse by Category</h3>
+                    <div class="categories">
+                        <div class="allnews">
+                            <p><i class="fas fa-newspaper"></i>All News</p>
+                        </div>
+                        <div class="forex">
+                            <p><i class="fas fa-chart-line"></i> Forex</p>
+                        </div>
+                        <div class="crypto">
+                            <p><i class="fas fa-bitcoin"></i> Crypto</p>
+                        </div>
+                        <div class="commodities">
+                            <p><i class="fas fa-gem"></i> Commodities</p>
+                        </div>
+                        <div class="stocks">
+                            <p><i class="fas fa-chart-column"></i> Stocks</p>
+                        </div>
+                        <div class="economy">
+                            <p><i class="fas fa-landmark"></i> Economy</p>
+                        </div>
+                        <div class="central-banks">
+                            <p><i class="fas fa-building-columns"></i> Central Banks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-news">
+                    <h3>Latest News</h3>
+                    <div class="latest-content">
+                        <div class="latest-forex">
+                            <div class="latest-top">
+                                <div class="latest-image"></div>
+                                <div class="latest-info">
+                                    <p>Forex</p>
+                                    <h1>Fed Officials Signal Caution on Rate Cuts</h1>
+                                    <p>Federal Reserve officails remain cautions about cutting rates , citing persistent inflation concerns.</p>
+                                </div>
+                            </div>
+                            <div class="latest-middle">
+                                <p><i class="fas fa-calendar"></i> Jul 1, 2026</p>
+                                <p><i class="fas fa-clock"></i> 09:15 AM</p>
+                                <p><i class="fas fa-newspaper"></i> Bloomberg</p>
+                            </div>
+                            <div class="latest-bottom">
+                                <p>Read More</p>
+                                <p><i class="fas fa-bookmark"></i></p>
+                            </div>
+                        </div>
+                        <div class="latest-economy"></div>
+                        <div class="latest-stocks"></div>
+                    </div>
+                    <div class="latest-footer"></div>
+                </div>
+            </div>
+            <div class="right-dashboard"></div>
         </section>
     </body>
 </html>
